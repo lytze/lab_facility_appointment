@@ -1,0 +1,44 @@
+.holder {
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    max-width: 850px;
+}
+a {
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+.date-toggle {
+    text-align: center;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.time-block {
+    margin:  5px auto 5px auto;
+    padding: 8px 12px 8px 12px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.time-block-used {
+    background-color: rgb(239, 183, 62);
+    border-color: rgb(239, 183, 62);
+    color: rgb(255, 255, 255);
+}
+.time-block-selected {
+    border-color: rgb(100, 100, 100);
+    border-left-width: 9px;
+}
+.time-block a {
+    color: rgb(255, 255, 255);
+}
+.popover {
+    color: rgb(0, 0, 0);
+}
