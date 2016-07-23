@@ -11,6 +11,8 @@ shinyServer(function(input, output, session) {
         date = Sys.Date(),
         info_refresh = 0
     )
+    updateSliderInput(session, 'startTime',
+        value = max(8, as.numeric(format(Sys.time(), '%H')) + ceiling(as.numeric(format(Sys.time(), '%M'))/ 30)/2) + c(0, 1))
     
     observeEvent(input$prevDay, {
         qry$date <- qry$date - 1

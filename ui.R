@@ -70,9 +70,7 @@ shinyUI(
                                                     'Dissection Microscope - Left' = 'D', 'Dissection Microscope - Right' = 'E',
                                                     'Flourencent Microscope' = 'F')),
                                       sliderInput('startTime', 'Choose Appointment Time',
-                                                  min = 8, max = 24, step = 0.5,
-                                                  (value = as.numeric(format(Sys.time(), '%H'))) +
-                                                      ceiling(as.numeric(format(Sys.time(), '%M'))/ 30)/2 + c(0, 1),
+                                                  min = 8, max = 24, step = 0.5, value = c(8, 9),
                                                   width = '100%'),
                                       textInput('userName', 'Name of User', width = '100%'),
                                       textInput('veriInfo', span('Verification Code',
